@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deine Digitale Werkzeugkiste</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212; /* Dunkelgrauer Hintergrund */
+            background-image: url('https://floridevs.github.io/codepages89898/codes/index.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #e0e0e0; /* Heller Text */
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .hero {
+            color: #fff;
+            text-align: center;
+            padding: 100px 30px;
+            background-color: rgba(30, 30, 30, 0.8); /* Dunkleres Overlay */
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            font-weight: 700;
+            letter-spacing: -0.05em;
+        }
+
+        .hero p {
+            font-size: 1.1em;
+            color: #ccc;
+            margin-bottom: 25px;
+        }
+
+        .content-wrapper {
+            display: flex;
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(40, 40, 40, 0.85); /* Dunklere Box */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Deutlicherer Schatten */
+            border-radius: 12px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .office-section, .security-section {
+            background-color: #212121; /* Dunklere Sektionshintergründe */
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Deutlicherer Schatten */
+            margin-bottom: 20px;
+            flex: 1 1 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .office-section h2, .security-section h2 {
+            color: #bb86fc; /* Akzentfarbe für Überschriften */
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .office-button, .security-button {
+            display: inline-block;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 2px 6px rgba(179, 136, 255, 0.3); /* Angepasster Schatten */
+            margin-top: 15px;
+        }
+
+        .office-button {
+            background-color: #1ed760; /* Hellgrün */
+            color: #212121; /* Dunkler Text */
+        }
+
+        .office-button:hover {
+            background-color: #0dbf51;
+            box-shadow: 0 4px 8px rgba(13, 191, 81, 0.3);
+        }
+
+        .security-button {
+            background-color: #03dac6; /* Cyan */
+            color: #212121; /* Dunkler Text */
+        }
+
+        .security-button:hover {
+            background-color: #02a793;
+            box-shadow: 0 4px 8px rgba(2, 167, 147, 0.3);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #303030; /* Dunklerer Footer */
+            color: #e0e0e0;
+            font-size: 0.9em;
+            border-radius: 12px 12px 0 0;
+            margin-top: auto;
+        }
+
+        @media (max-width: 768px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+
+            .office-section, .security-section {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Deine Digitale Schaltzentrale</h1>
+        <p>Wichtige Tools für deine dunkle digitale Welt.</p>
+    </div>
+
+    <div class="content-wrapper">
+        <section class="office-section">
+            <h2><i class="fas fa-laptop" style="margin-right: 8px;"></i> NotePro</h2>
+            <p style="font-size: 1.1em; color: #ccc; margin-bottom: 15px;">Notizen und Kallender alles in einem</p>
+            <a class="office-button" href="notepro.html" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-file-alt" style="margin-right: 8px;"></i> Zu NotePro
+            </a>
+        </section>
+
+        <section class="security-section">
+            <h2><i class="fas fa-shield-alt" style="margin-right: 8px;"></i> IT-Sicherheit</h2>
+            <p style="font-size: 1.1em; color: #ccc; margin-bottom: 15px;">Überprüfe deine Passwortsicherheit und bleibe geschützt.</p>
+            <a class="security-button" href="password.html" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-key" style="margin-right: 8px;"></i> Passwort-Sicherheit prüfen
+            </a>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Deine Digitale Schaltzentrale</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/YOUR_FONT_AWESOME_KIT_ID.js" crossorigin="anonymous"></script>
+</body>
+</html>
